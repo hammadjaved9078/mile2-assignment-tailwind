@@ -1,3 +1,5 @@
+import { Container } from "postcss";
+import { BiColorFill } from "react-icons/bi";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,9 +10,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      Container:{
+        center:true,
+        padding: "20px"
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      accent : "#08E95E"
       },
     },
   },
